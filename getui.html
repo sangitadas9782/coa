@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch UI via GET Request</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        #content-container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Get that Patient Data</h1>
+    <button onclick="fetchHTMLContent()">Fetch UI</button>
+    <div id="content-container">
+    </div>
+    <script>
+        function fetchHTMLContent() {
+            const apiUrl = ' https://sangitadas9782.github.io/coa/getui.html'; 
+            fetch(apiUrl)
+                .then(response => response.text())  
+                .then(data =>{
+                    document.getElementById('content-container').innerHTML = data;
+                })
+                .catch(error => {
+                    console.error('Error fetching HTML:', error);
+                    document.getElementById('content-container').innerHTML = 'Failed to load the UI. Please try again later.';
+                });
+        }
+    </script>
+</body>
+</html>
