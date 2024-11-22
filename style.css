@@ -1,0 +1,313 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f8fc;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.menu a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: #333;
+}
+
+.dashboard {
+    display: flex;
+    padding: 1rem;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.main-content {
+    flex: 2;
+    margin: 0 1rem;
+}
+
+
+.profile-card2{
+    flex: 1;
+    /* display: flex; */
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.lab-results{
+    flex: 1;
+    /* display: flex; */
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+    
+}
+li{
+    list-style: none;
+}
+
+button{
+    cursor: pointer;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+/* .patient-list{
+    display: flex;
+    flex-direction: column;
+    
+} */
+
+
+
+
+ .patient-list{
+    
+    width: 375px;
+    
+ }
+
+ .profile-card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    margin: 10px;
+}
+
+.profile-image {
+    width: 40px;  /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the container */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.patient-name {
+    font-weight: bold;
+    margin: 0;
+}
+
+.profile-details {
+    font-size: 0.9em;
+    color: gray;
+}
+
+.options {
+    margin-left: auto; /* Pushes the options to the far right */
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f0f0f0;
+    
+}
+.highlight {
+    background-color: #f0f9ff;
+}
+
+.container {
+    max-width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+    /* background: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+
+
+.section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.grid {
+    display:flex;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin: 30px;
+}
+
+.card {
+    background: #f8f9fd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.card.respiratory {
+    background-color: #eaf7ff;
+    width: 250px;
+}
+
+.card.temperature {
+    background-color: #ffeaf0;
+    width: 250px;
+}
+
+.card.heart {
+    background-color: #ffe4f6;
+    width: 250px;
+}
+.card h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card span {
+    display: block;
+    margin-top: 5px;
+    color: #555;
+}
+
+.chart {
+    margin: 20px 0;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+.legend {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.legend span {
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+
+.diagnosis-history {
+    width: 850px;
+    margin: 30px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .blood-pressure-chart {
+    background: #f8f0ff;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .chart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .chart-header h3 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .chart-header select {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  canvas {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .chart-details {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .chart-details div {
+    text-align: center;
+  }
+  
+  .chart-details p {
+    margin: 5px 0;
+  }
+  
+  .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+  
+  .systolic {
+    background-color: #b75bc5;
+    /* margin: 10px; */
+  }
+  
+  .diastolic {
+    background-color: #4657af;
+    /* margin: 10px; */
+  }
+  
